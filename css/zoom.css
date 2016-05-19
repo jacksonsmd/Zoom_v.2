@@ -1,0 +1,39 @@
+.zoom-image-holder {
+	position: relative;
+	overflow: hidden;
+	-ms-touch-action: none;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.zoom-image {
+	cursor: move;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: none;
+}
+
+.zoom-image img {
+	display: block;
+	width: 100%;
+}
+
+.zoom-container {
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.zoom-container img {
+	max-width: none !important;
+	max-height: none !important;
+	display: block !important;
+	position: absolute !important;
+	top: 0;
+	left: 0;
+}
